@@ -1,0 +1,13 @@
+# Operating systems and editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local tooling
+node_modules/
+*.log
+
+# Never commit raw/private screenshot working files
+assets/screenshots/**/raw/
+assets/screenshots/**/*-private.*

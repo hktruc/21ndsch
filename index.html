@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4511e">
+  <meta name="description" content="Hướng dẫn từng bước dùng Strava cho hoạt động Rèn Thân của Hành trình 21 ngày đọc sách K03.">
+  <title>Hướng dẫn Strava — 21 ngày đọc sách K03</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#noi-dung">Bỏ qua đến nội dung chính</a>
+
+  <header class="hero" id="dau-trang">
+    <div class="hero__glow" aria-hidden="true"></div>
+    <div class="container hero__content">
+      <p class="eyebrow">Hành trình 21 ngày đọc sách K03 · Rèn Thân</p>
+      <h1>Hướng dẫn Strava<br><span>Từ số 0 đến ghi xong buổi đầu tiên</span></h1>
+      <p class="hero__lead">Chỉ cần điện thoại. Không cần đồng hồ chạy bộ. <strong>Không cần mua Strava Subscription.</strong></p>
+
+      <div class="hero__choices" aria-labelledby="chon-he-dieu-hanh">
+        <p id="chon-he-dieu-hanh">Bạn đang dùng điện thoại nào?</p>
+        <div class="os-switch" role="group" aria-label="Chọn hệ điều hành">
+          <button class="os-button" type="button" data-os-choice="android" aria-pressed="false">
+            <span aria-hidden="true">●</span> Tôi dùng Android
+          </button>
+          <button class="os-button" type="button" data-os-choice="ios" aria-pressed="false">
+            <span aria-hidden="true">●</span> Tôi dùng iPhone
+          </button>
+        </div>
+      </div>
+
+      <a class="button button--club" href="https://www.strava.com/clubs/21ngaydocsach_k03" target="_blank" rel="noopener noreferrer">
+        Tham gia Strava Club K03 <span aria-hidden="true">↗</span>
+      </a>
+      <p class="hero__note">Mất khoảng 10–15 phút để cài đặt và kiểm tra.</p>
+    </div>
+  </header>
+
+  <nav class="progress-nav" aria-label="Các bước hướng dẫn">
+    <div class="container progress-nav__inner">
+      <a href="#cai-app" data-step="1"><span>1</span>Cài app</a>
+      <a href="#tai-khoan" data-step="2"><span>2</span>Tài khoản</a>
+      <a href="#gps" data-step="3"><span>3</span>GPS &amp; nền</a>
+      <a href="#club" data-step="4"><span>4</span>Vào Club</a>
+      <a href="#run-walk" data-step="5"><span>5</span>Run / Walk</a>
+      <a href="#start" data-step="6"><span>6</span>Start</a>
+      <a href="#finish" data-step="7"><span>7</span>Finish</a>
+      <a href="#kiem-tra" data-step="8"><span>8</span>Kiểm tra</a>
+    </div>
+  </nav>
+
+  <main id="noi-dung">
+    <section class="section intro-section" aria-labelledby="strava-la-gi">
+      <div class="container narrow">
+        <div class="section-heading section-heading--center">
+          <p class="kicker">Trước khi bắt đầu</p>
+          <h2 id="strava-la-gi">Strava là gì?</h2>
+        </div>
+        <p class="lead-card">Strava là ứng dụng dùng GPS của điện thoại hoặc đồng hồ để ghi lại hoạt động như chạy bộ và đi bộ. Trong hành trình này, Strava giúp lớp ghi nhận hoạt động Rèn Thân và tạo thêm tương tác.</p>
+        <p class="center-note"><strong>Đọc sách vẫn là hành trình chính.</strong> Chạy bộ / đi bộ là hoạt động cộng thêm.</p>
+      </div>
+    </section>
+
+    <section class="section section--warm" aria-labelledby="mien-phi">
+      <div class="container">
+        <article class="important-card">
+          <div class="important-card__icon" aria-hidden="true">✓</div>
+          <div>
+            <p class="kicker">Điều quan trọng nhất</p>
+            <h2 id="mien-phi">Bạn KHÔNG cần mua Strava Subscription</h2>
+            <p>Bản miễn phí đã đủ để ghi Run / Walk và tham gia Club K03. Nếu thấy <strong>Subscribe, Try free, Start free trial, Upgrade</strong> hoặc <strong>Strava + Runna</strong>, hãy tìm nút bỏ qua, đóng hoặc quay lại.</p>
+            <p class="do-not">Không nhập thẻ hoặc phương thức thanh toán chỉ để tham gia chương trình.</p>
+            <details>
+              <summary>Nếu tôi đã lỡ đăng ký thì sao?</summary>
+              <div class="details-content os-copy" data-os="android">
+                <strong>Android:</strong> mở Google Play → ảnh đại diện → Payments &amp; subscriptions / Thanh toán và gói thuê bao → Subscriptions / Gói thuê bao → kiểm tra Strava.
+              </div>
+              <div class="details-content os-copy" data-os="ios">
+                <strong>iPhone:</strong> mở Settings / Cài đặt → tên Apple ID → Subscriptions / Gói đăng ký → kiểm tra Strava.
+              </div>
+            </details>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section step-section" id="cai-app" data-progress-section="1" aria-labelledby="cai-app-title">
+      <div class="container">
+        <div class="step-header">
+          <span class="step-number">Bước 1</span>
+          <div>
+            <p class="kicker">Cài ứng dụng chính chủ</p>
+            <h2 id="cai-app-title">Cài Strava trên điện thoại</h2>
+          </div>
+        </div>
+        <div class="os-panel" data-os="android">
+          <div class="instruction-card">
+            <span class="instruction-card__badge">Android</span>
+            <ol class="action-list">
+              <li>Mở <strong>CH Play / Google Play</strong>.</li>
+              <li>Tìm <strong>Strava</strong>.</li>
+              <li>Chọn <strong>Install / Cài đặt</strong>, sau đó <strong>Open / Mở</strong>.</li>
+            </ol>
+          </div>
+          <div class="screenshot-slot" data-platform="android" data-file="01-google-play-strava.webp" data-title="Tìm Strava trên Google Play" data-caption="Chọn đúng ứng dụng Strava chính chủ."></div>
+        </div>
+        <div class="os-panel" data-os="ios">
+          <div class="instruction-card">
+            <span class="instruction-card__badge">iPhone</span>
+            <ol class="action-list">
+              <li>Mở <strong>App Store</strong>.</li>
+              <li>Tìm <strong>Strava</strong>.</li>
+              <li>Chọn <strong>Get / Tải</strong>, sau đó <strong>Open / Mở</strong>.</li>
+            </ol>
+          </div>
+          <div class="screenshot-slot" data-platform="ios" data-file="01-app-store-strava.webp" data-title="Tìm Strava trên App Store" data-caption="Chọn đúng ứng dụng Strava chính chủ."></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--soft step-section" id="tai-khoan" data-progress-section="2" aria-labelledby="tai-khoan-title">
+      <div class="container">
+        <div class="step-header">
+          <span class="step-number">Bước 2</span>
+          <div>
+            <p class="kicker">Miễn phí và dễ nhận diện</p>
+            <h2 id="tai-khoan-title">Tạo hoặc đăng nhập tài khoản</h2>
+          </div>
+        </div>
+        <div class="two-column">
+          <article class="instruction-card">
+            <h3>Đăng nhập theo cách thuận tiện</h3>
+            <p>Dùng email, tài khoản Google hoặc Apple nếu Strava hiển thị lựa chọn đó. Bạn không cần mua gói trả phí.</p>
+          </article>
+          <article class="instruction-card instruction-card--accent">
+            <h3>Dùng tên BTC có thể nhận ra</h3>
+            <p>Nên dùng tên thật hoặc tên quen thuộc trong lớp. Tránh nickname quá khác vì BTC cần đối chiếu hoạt động.</p>
+          </article>
+        </div>
+        <div class="os-panel os-panel--screens" data-os="android">
+          <div class="screenshot-slot" data-platform="android" data-file="03-signup-login.webp" data-title="Đăng ký hoặc đăng nhập" data-caption="Chọn cách đăng nhập phù hợp với bạn."></div>
+          <div class="screenshot-slot" data-platform="android" data-file="05-profile-name.webp" data-title="Kiểm tra tên hồ sơ" data-caption="Dùng tên dễ nhận diện trong lớp."></div>
+        </div>
+        <div class="os-panel os-panel--screens" data-os="ios">
+          <div class="screenshot-slot" data-platform="ios" data-file="03-signup-login.webp" data-title="Đăng ký hoặc đăng nhập" data-caption="Chọn cách đăng nhập phù hợp với bạn."></div>
+          <div class="screenshot-slot" data-platform="ios" data-file="05-profile-name.webp" data-title="Kiểm tra tên hồ sơ" data-caption="Dùng tên dễ nhận diện trong lớp."></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section step-section" id="gps" data-progress-section="3" aria-labelledby="gps-title">
+      <div class="container">
+        <div class="step-header">
+          <span class="step-number step-number--alert">Bước 3</span>
+          <div>
+            <p class="kicker">Cực kỳ quan trọng</p>
+            <h2 id="gps-title">Cho phép GPS và chạy nền</h2>
+          </div>
+        </div>
+        <p class="section-lead">Bạn có thể khóa màn hình và bỏ điện thoại vào túi. Tuy nhiên, điện thoại phải cho phép Strava tiếp tục dùng GPS / hoạt động nền. Nếu hệ thống tiết kiệm pin chặn ứng dụng, quãng đường có thể bị thiếu hoặc đứt đoạn.</p>
+
+        <div class="os-panel" data-os="android">
+          <div class="subsection-grid">
+            <article class="instruction-card">
+              <span class="instruction-card__badge">Android · Vị trí</span>
+              <h3>Bật quyền Location / Vị trí</h3>
+              <p class="path">Cài đặt → Ứng dụng → Strava → Quyền → Vị trí</p>
+              <p>Tên menu có thể khác trên Samsung, OPPO, Xiaomi, vivo hoặc Pixel. Hãy tìm lựa chọn cho phép Strava dùng vị trí khi ghi hoạt động.</p>
+            </article>
+            <article class="instruction-card instruction-card--accent">
+              <span class="instruction-card__badge">Android · Pin</span>
+              <h3>Không chặn hoạt động nền</h3>
+              <p class="path">Cài đặt → Ứng dụng → Strava → Pin / Battery</p>
+              <p>Tìm lựa chọn tương đương: <strong>Không hạn chế, Unrestricted, Allow background activity</strong> hoặc <strong>Không tối ưu</strong>.</p>
+            </article>
+          </div>
+          <div class="brand-helpers" aria-label="Gợi ý theo hãng Android">
+            <details><summary>Samsung</summary><p>Tìm mục Pin của ứng dụng Strava và kiểm tra giới hạn chạy nền. Tên mục có thể đổi theo phiên bản One UI.</p></details>
+            <details><summary>Xiaomi / Redmi</summary><p>Tìm quản lý pin theo ứng dụng và cho phép Strava chạy nền. Không đoán theo ảnh của máy khác.</p></details>
+            <details><summary>OPPO / realme</summary><p>Kiểm tra tối ưu pin và quyền hoạt động nền của Strava.</p></details>
+            <details><summary>vivo</summary><p>Kiểm tra quản lý pin nền / tiêu thụ pin của Strava.</p></details>
+            <details><summary>Pixel / Android gốc</summary><p>App info → App battery usage → kiểm tra quyền sử dụng nền.</p></details>
+            <details><summary>Hãng khác</summary><p>Mở thông tin ứng dụng Strava, tìm Location / Vị trí và Battery / Pin. Menu thực tế trên máy là nguồn đáng tin cậy nhất.</p></details>
+          </div>
+          <div class="os-panel--screens">
+            <div class="screenshot-slot" data-platform="android" data-file="06-location-permission.webp" data-title="Quyền vị trí Android" data-caption="Cho phép Strava dùng vị trí khi ghi hoạt động."></div>
+            <div class="screenshot-slot" data-platform="android" data-file="07-battery-background.webp" data-title="Pin và chạy nền Android" data-caption="Không để tiết kiệm pin chặn Strava."></div>
+          </div>
+        </div>
+
+        <div class="os-panel" data-os="ios">
+          <div class="subsection-grid">
+            <article class="instruction-card">
+              <span class="instruction-card__badge">iPhone · Vị trí</span>
+              <h3>Bật Location Services</h3>
+              <p class="path">Settings / Cài đặt → Privacy &amp; Security / Quyền riêng tư &amp; Bảo mật → Location Services / Dịch vụ định vị → Strava</p>
+              <p>Bật <strong>Precise Location / Vị trí chính xác</strong> nếu tùy chọn này xuất hiện.</p>
+            </article>
+            <article class="instruction-card instruction-card--accent">
+              <span class="instruction-card__badge">iPhone · Chạy nền</span>
+              <h3>Kiểm tra Background App Refresh</h3>
+              <p class="path">Settings → General → Background App Refresh</p>
+              <p><strong>Khóa màn hình: OK.</strong><br><strong>Vuốt đóng hẳn Strava khi đang ghi: KHÔNG NÊN.</strong></p>
+            </article>
+          </div>
+          <div class="os-panel--screens">
+            <div class="screenshot-slot" data-platform="ios" data-file="07-strava-location.webp" data-title="Quyền vị trí iPhone" data-caption="Kiểm tra quyền vị trí của Strava."></div>
+            <div class="screenshot-slot" data-platform="ios" data-file="09-background-refresh.webp" data-title="Làm mới ứng dụng trong nền" data-caption="Không vuốt đóng Strava khi đang ghi."></div>
+          </div>
+        </div>
+
+        <aside class="lock-note">
+          <span aria-hidden="true">🔒</span>
+          <div><strong>Khóa màn hình khác với đóng ứng dụng.</strong><br>Bạn có thể khóa màn hình. Đừng force-close / vuốt tắt Strava trong danh sách ứng dụng gần đây khi đang ghi.</div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section--dark" aria-labelledby="test-title">
+      <div class="container test-layout">
+        <div>
+          <p class="kicker">Checkpoint trước ngày 1</p>
+          <h2 id="test-title">Đi bộ thử 5–10 phút</h2>
+          <p>Thử trước giúp bạn phát hiện sớm vấn đề GPS hoặc tiết kiệm pin.</p>
+        </div>
+        <ol class="test-list">
+          <li>Mở Strava và chọn <strong>Walk</strong>.</li>
+          <li>Bấm <strong>Start</strong>.</li>
+          <li>Đi bộ 5–10 phút, khóa màn hình trong phần lớn thời gian.</li>
+          <li>Mở lại điện thoại → <strong>Finish</strong> → <strong>Save</strong>.</li>
+          <li>Kiểm tra quãng đường và đường GPS.</li>
+        </ol>
+        <p class="success-stamp"><span aria-hidden="true">✓</span> Có km và đường GPS hợp lý? Điện thoại đã sẵn sàng.</p>
+      </div>
+    </section>
+
+    <section class="section step-section" id="club" data-progress-section="4" aria-labelledby="club-title">
+      <div class="container">
+        <div class="step-header">
+          <span class="step-number">Bước 4</span>
+          <div>
+            <p class="kicker">Vào đúng cộng đồng</p>
+            <h2 id="club-title">Tham gia Strava Club K03</h2>
+          </div>
+        </div>
+        <div class="club-card">
+          <div>
+            <p class="club-card__label">Club chính thức</p>
+            <h3>21 ngày đọc sách K03</h3>
+            <p>Bấm link → đăng nhập nếu được hỏi → mở trang Club → chọn <strong>Join / Tham gia</strong>.</p>
+          </div>
+          <a class="button button--club" href="https://www.strava.com/clubs/21ngaydocsach_k03" target="_blank" rel="noopener noreferrer">Tham gia Club ngay <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="os-panel os-panel--screens" data-os="android">
+          <div class="screenshot-slot" data-platform="android" data-file="09-club-link.webp" data-title="Mở link Club trên Android" data-caption="Đăng nhập nếu Strava yêu cầu."></div>
+          <div class="screenshot-slot" data-platform="android" data-file="10-club-join.webp" data-title="Chọn Join / Tham gia" data-caption="Kiểm tra bạn đã vào đúng Club K03."></div>
+        </div>
+        <div class="os-panel os-panel--screens" data-os="ios">
+          <div class="screenshot-slot" data-platform="ios" data-file="10-club-link.webp" data-title="Mở link Club trên iPhone" data-caption="Đăng nhập nếu Strava yêu cầu."></div>
+          <div class="screenshot-slot" data-platform="ios" data-file="11-club-join.webp" data-title="Chọn Join / Tham gia" data-caption="Kiểm tra bạn đã vào đúng Club K03."></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--soft step-section" id="run-walk" data-progress-section="5" aria-labelledby="run-walk-title">
+      <div class="container">
+        <div class="step-header">
+          <span class="step-number">Bước 5</span>
+          <div>
+            <p class="kicker">Chọn theo vận động thực tế</p>
+            <h2 id="run-walk-title">RUN hay WALK?</h2>
+          </div>
+        </div>
+        <div class="choice-grid">
+          <article class="activity-card activity-card--run">
+            <p class="activity-card__icon" aria-hidden="true">R</p>
+            <h3>RUN / Chạy bộ</h3>
+            <p>Chọn khi hoạt động chính là chạy, jogging, chạy chậm hoặc chạy xen kẽ đi bộ nhưng mục tiêu chính là chạy.</p>
+          </article>
+          <article class="activity-card activity-card--walk">
+            <p class="activity-card__icon" aria-hidden="true">W</p>
+            <h3>WALK / Đi bộ</h3>
+            <p>Chọn khi chủ yếu đi bộ, đi bộ nhanh hoặc đi bộ thư giãn.</p>
+          </article>
+        </div>
+        <p class="center-note"><strong>Chạy rất chậm vẫn có thể chọn Run</strong> nếu mục tiêu chính của bạn là chạy.</p>
+        <div class="mini-flow" aria-label="Cách chọn loại hoạt động">
+          <span>Mở Strava</span><b aria-hidden="true">→</b><span>Record / Ghi</span><b aria-hidden="true">→</b><span>Chạm loại hoạt động</span><b aria-hidden="true">→</b><span>Run hoặc Walk</span>
+        </div>
+        <div class="os-panel" data-os="android">
+          <div class="screenshot-slot" data-platform="android" data-file="12-choose-activity.webp" data-title="Chọn loại hoạt động Android" data-caption="Chọn Run hoặc Walk trước khi bắt đầu."></div>
+        </div>
+        <div class="os-panel" data-os="ios">
+          <div class="screenshot-slot" data-platform="ios" data-file="13-choose-activity.webp" data-title="Chọn loại hoạt động iPhone" data-caption="Chọn Run hoặc Walk trước khi bắt đầu."></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section step-section" id="start" data-progress-section="6" aria-labelledby="start-title">
+      <div class="container">
+        <div class="step-header">
+          <span class="step-number">Bước 6</span>
+          <div>
+            <p class="kicker">Kiểm tra rồi bắt đầu</p>
+            <h2 id="start-title">Trước khi bấm START</h2>
+          </div>
+        </div>
+        <div class="check-card">
+          <ul class="check-list">
+            <li>GPS / Vị trí đã bật</li>
+            <li>Strava được phép hoạt động nền</li>
+            <li>Không bị chế độ tiết kiệm pin chặn</li>
+            <li>Đã chọn đúng Run hoặc Walk</li>
+            <li><strong>Đã bấm Start / Bắt đầu</strong></li>
+          </ul>
+        </div>
+        <div class="during-grid">
+          <article><span aria-hidden="true">✓</span><h3>Có thể</h3><p>Khóa màn hình, bỏ điện thoại vào túi, vận động bình thường và dùng Pause nếu dừng lâu.</p></article>
+          <article><span aria-hidden="true">×</span><h3>Không nên</h3><p>Vuốt đóng / force-close Strava khi đang ghi. Bạn cũng không cần giữ màn hình sáng.</p></article>
+        </div>
+        <div class="os-panel" data-os="android">
+          <div class="screenshot-slot" data-platform="android" data-file="15-start.webp" data-title="Start trên Android" data-caption="Xác nhận đúng loại hoạt động rồi bấm Start."></div>
+        </div>
+        <div class="os-panel" data-os="ios">
+          <div class="screenshot-slot" data-platform="ios" data-file="16-start.webp" data-title="Start trên iPhone" data-caption="Xác nhận đúng loại hoạt động rồi bấm Start."></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--soft step-section" id="finish" data-progress-section="7" aria-labelledby="finish-title">
+      <div class="container">
+        <div class="step-header">
+          <span class="step-number">Bước 7</span>
+          <div>
+            <p class="kicker">Đừng quên lưu</p>
+            <h2 id="finish-title">FINISH + SAVE</h2>
+          </div>
+        </div>
+        <div class="finish-flow" aria-label="Quy trình kết thúc hoạt động">
+          <div><span>1</span><strong>Mở lại Strava</strong></div>
+          <div><span>2</span><strong>Finish / Kết thúc</strong></div>
+          <div><span>3</span><strong>Kiểm tra hoạt động</strong></div>
+          <div><span>4</span><strong>Save / Lưu</strong></div>
+        </div>
+        <p class="warning-line"><span aria-hidden="true">!</span> Không bấm <strong>Discard / Xóa</strong> nếu bạn muốn giữ hoạt động.</p>
+        <div class="os-panel os-panel--screens" data-os="android">
+          <div class="screenshot-slot" data-platform="android" data-file="17-finish.webp" data-title="Finish trên Android" data-caption="Kết thúc khi bạn đã vận động xong."></div>
+          <div class="screenshot-slot" data-platform="android" data-file="18-save.webp" data-title="Save trên Android" data-caption="Lưu để hoạt động xuất hiện trên Strava."></div>
+        </div>
+        <div class="os-panel os-panel--screens" data-os="ios">
+          <div class="screenshot-slot" data-platform="ios" data-file="18-finish.webp" data-title="Finish trên iPhone" data-caption="Kết thúc khi bạn đã vận động xong."></div>
+          <div class="screenshot-slot" data-platform="ios" data-file="19-save.webp" data-title="Save trên iPhone" data-caption="Lưu để hoạt động xuất hiện trên Strava."></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section step-section" id="kiem-tra" data-progress-section="8" aria-labelledby="kiem-tra-title">
+      <div class="container">
+        <div class="step-header">
+          <span class="step-number">Bước 8</span>
+          <div>
+            <p class="kicker">Xác nhận đã ghi thành công</p>
+            <h2 id="kiem-tra-title">Kiểm tra kết quả</h2>
+          </div>
+        </div>
+        <div class="result-grid">
+          <article class="result-card result-card--good">
+            <h3><span aria-hidden="true">✓</span> Thành công</h3>
+            <ul><li>Có activity</li><li>Có số km</li><li>Có thời gian</li><li>Đường GPS hợp lý nếu hiển thị</li></ul>
+          </article>
+          <article class="result-card result-card--check">
+            <h3><span aria-hidden="true">!</span> Cần kiểm tra</h3>
+            <ul><li>0 km hoặc km quá thấp</li><li>Đường GPS bị đứt</li><li>Activity chưa được Save</li><li>Chưa thấy hoạt động trong Club</li></ul>
+          </article>
+        </div>
+        <div class="club-check">
+          <h3>Kiểm tra Club</h3>
+          <p>Vào trang Club để xem bạn đã Join chưa, xem feed và leaderboard nếu Strava đang hiển thị. Giao diện hoặc danh sách có thể khác giữa các tài khoản và từng thời điểm.</p>
+        </div>
+        <div class="os-panel" data-os="android">
+          <div class="screenshot-slot" data-platform="android" data-file="19-activity-result.webp" data-title="Kết quả hoạt động Android" data-caption="Kiểm tra km, thời gian và đường GPS."></div>
+        </div>
+        <div class="os-panel" data-os="ios">
+          <div class="screenshot-slot" data-platform="ios" data-file="20-activity-result.webp" data-title="Kết quả hoạt động iPhone" data-caption="Kiểm tra km, thời gian và đường GPS."></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--soft" id="faq" aria-labelledby="faq-title">
+      <div class="container narrow">
+        <div class="section-heading section-heading--center">
+          <p class="kicker">Khi bạn cần trợ giúp</p>
+          <h2 id="faq-title">Câu hỏi thường gặp</h2>
+        </div>
+        <div class="faq-list">
+          <details><summary>Có phải mua Strava không?</summary><p>Không. Bản miễn phí đủ để ghi Run / Walk và tham gia Club K03. Không nhập phương thức thanh toán chỉ để hoàn thành chương trình.</p></details>
+          <details><summary>Tôi không có đồng hồ chạy bộ?</summary><p>Không sao. Bạn chỉ cần điện thoại có GPS, cấp quyền vị trí đúng và cho phép Strava hoạt động nền.</p></details>
+          <details><summary>Tôi đi bộ được không?</summary><p>Được. Hãy chọn Walk / Đi bộ trước khi bấm Start.</p></details>
+          <details><summary>Tôi chạy rất chậm thì chọn Run hay Walk?</summary><p>Nếu mục tiêu chính là chạy hoặc jogging, bạn có thể chọn Run. Nếu chủ yếu đi bộ, hãy chọn Walk.</p></details>
+          <details><summary>Tắt màn hình có sao không?</summary><p>Khóa màn hình là bình thường. Quan trọng là Strava có quyền vị trí, được chạy nền và không bị tiết kiệm pin chặn. Không vuốt đóng hẳn ứng dụng khi đang ghi.</p></details>
+          <details><summary>Tại sao tôi chạy 5 km nhưng Strava chỉ ghi 2 km?</summary><p>Thường do quyền vị trí, GPS yếu, tiết kiệm pin hoặc ứng dụng bị đóng nền. Kiểm tra lại Bước 3 rồi làm bài test đi bộ 5–10 phút.</p></details>
+          <details><summary>Tôi không có mạng 4G lúc chạy?</summary><p>Strava thường có thể ghi GPS khi không có dữ liệu di động; hãy mở ứng dụng và bắt đầu trước khi đi. Kết nối mạng lại để lưu/đồng bộ nếu cần.</p></details>
+          <details><summary>Tôi lỡ chọn nhầm Run / Walk?</summary><p>Hoạt động vẫn có thể được ghi. Sau khi lưu, Strava có thể cho phép sửa loại hoạt động; nếu không chắc, hãy báo BTC thay vì xóa vội.</p></details>
+          <details><summary>Tôi lỡ mua Subscription?</summary><p>Kiểm tra và quản lý gói trong Google Play trên Android hoặc Subscriptions của Apple ID trên iPhone. Việc gỡ ứng dụng không nhất thiết tự hủy gói.</p></details>
+          <details><summary>Tôi không thấy mình trong Club?</summary><p>Kiểm tra đã bấm Join / Tham gia chưa, tài khoản đang đăng nhập có đúng không và activity đã Save chưa. Cách Strava hiển thị feed/leaderboard có thể thay đổi.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="thu-vien-anh" aria-labelledby="manifest-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="kicker">Minh họa mô phỏng thao tác</p>
+          <h2 id="manifest-title">Bộ minh họa AI đang dùng trên website</h2>
+          <p>24 ảnh đang hiển thị là minh họa giáo dục do AI tạo, không phải screenshot Strava và không sao chép giao diện ứng dụng thật. Mỗi ảnh dùng mockup điện thoại, marker, mũi tên và vùng highlight để giải thích thao tác; phần chữ và hướng dẫn trên trang mới là nguồn cần làm theo.</p>
+        </div>
+        <details class="manifest" data-manifest="android">
+          <summary>Android · 12 ảnh AI đang dùng / 20 filename chuẩn</summary>
+          <div class="manifest-grid" id="android-manifest"></div>
+        </details>
+        <details class="manifest" data-manifest="ios">
+          <summary>iPhone · 12 ảnh AI đang dùng / 21 filename chuẩn</summary>
+          <div class="manifest-grid" id="ios-manifest"></div>
+        </details>
+        <aside class="privacy-note">
+          <strong>Nếu thay bằng screenshot thật sau này:</strong> phải crop và che / làm mờ tên, avatar, email, số điện thoại, thông báo riêng tư, dữ liệu sức khỏe và bản đồ có thể tiết lộ nơi ở. Không commit ảnh gốc nhạy cảm.
+        </aside>
+      </div>
+    </section>
+
+    <section class="section quick-guide" aria-labelledby="quick-title">
+      <div class="container">
+        <p class="kicker">Ghi nhớ từ ngày 1</p>
+        <h2 id="quick-title">6 thao tác cho mỗi buổi</h2>
+        <div class="quick-flow">
+          <div><span>1</span>Mở Strava</div><b aria-hidden="true">↓</b>
+          <div><span>2</span>Chọn Run / Walk</div><b aria-hidden="true">↓</b>
+          <div><span>3</span>Start</div><b aria-hidden="true">↓</b>
+          <div><span>4</span>Khóa màn hình &amp; vận động</div><b aria-hidden="true">↓</b>
+          <div><span>5</span>Finish</div><b aria-hidden="true">↓</b>
+          <div><span>6</span>Save</div>
+        </div>
+        <a class="button button--light" href="#dau-trang">Xem lại từ đầu <span aria-hidden="true">↑</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div><strong>Hành trình 21 ngày đọc sách K03</strong><br><span>Hướng dẫn sử dụng Strava cho hoạt động Rèn Thân</span></div>
+      <p>Website không thu thập dữ liệu học viên và không sử dụng Strava API.</p>
+    </div>
+  </footer>
+
+  <div class="os-reminder" id="os-reminder" role="status" aria-live="polite" hidden>
+    <span id="os-reminder-text"></span>
+    <button type="button" id="change-os">Đổi điện thoại</button>
+  </div>
+
+  <dialog class="lightbox" id="lightbox" aria-labelledby="lightbox-title">
+    <button class="lightbox__close" type="button" aria-label="Đóng ảnh">×</button>
+    <img id="lightbox-image" alt="">
+    <p id="lightbox-title"></p>
+  </dialog>
+
+  <script src="./js/app.js"></script>
+</body>
+</html>
