@@ -51,7 +51,7 @@
   });
 
   changeOsButton?.addEventListener("click", () => {
-    document.querySelector(".hero__choices")?.scrollIntoView({ behavior: "smooth", block: "center" });
+    document.querySelector(".strava-os-chooser")?.scrollIntoView({ behavior: "smooth", block: "center" });
     const alternative = currentOs === "android" ? "ios" : "android";
     document.querySelector(`[data-os-choice="${alternative}"]`)?.focus({ preventScroll: true });
   });
@@ -115,44 +115,6 @@
     lightboxImage.removeAttribute("src");
   });
 
-  const manifests = {
-    android: [
-      "01-google-play-strava.webp", "02-open-strava.webp", "03-signup-login.webp",
-      "04-subscription-skip.webp", "05-profile-name.webp", "06-location-permission.webp",
-      "07-battery-background.webp", "08-power-saving.webp", "09-club-link.webp",
-      "10-club-join.webp", "11-record-screen.webp", "12-choose-activity.webp",
-      "13-run-selected.webp", "14-walk-selected.webp", "15-start.webp",
-      "16-locked-screen-test.webp", "17-finish.webp", "18-save.webp",
-      "19-activity-result.webp", "20-club-check.webp"
-    ],
-    ios: [
-      "01-app-store-strava.webp", "02-open-strava.webp", "03-signup-login.webp",
-      "04-subscription-skip.webp", "05-profile-name.webp", "06-location-services.webp",
-      "07-strava-location.webp", "08-precise-location.webp", "09-background-refresh.webp",
-      "10-club-link.webp", "11-club-join.webp", "12-record-screen.webp",
-      "13-choose-activity.webp", "14-run-selected.webp", "15-walk-selected.webp",
-      "16-start.webp", "17-lock-screen-note.webp", "18-finish.webp", "19-save.webp",
-      "20-activity-result.webp", "21-club-check.webp"
-    ]
-  };
-
-  const activeIllustrations = new Set(
-    screenshotSlots.map((slot) => `${slot.dataset.platform}/${slot.dataset.file}`)
-  );
-
-  Object.entries(manifests).forEach(([platform, files]) => {
-    const target = document.querySelector(`#${platform}-manifest`);
-    if (!target) return;
-    target.innerHTML = files.map((file, index) => {
-      const ready = activeIllustrations.has(`${platform}/${file}`);
-      return `
-      <div class="manifest-item${ready ? " is-ready" : ""}">
-        <span>${index + 1}</span>
-        <code>assets/screenshots/${platform}/${file}</code>
-        <em>${ready ? "Đã có minh họa AI" : "Filename dự phòng"}</em>
-      </div>`;
-    }).join("");
-  });
 
   const navLinks = [...document.querySelectorAll(".progress-nav a")];
   const sections = [...document.querySelectorAll("[data-progress-section]")];

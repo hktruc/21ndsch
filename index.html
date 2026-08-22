@@ -3,54 +3,131 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f4511e">
-  <meta name="description" content="Hướng dẫn từng bước dùng Strava cho hoạt động Rèn Thân của Hành trình 21 ngày đọc sách K03.">
-  <title>Hướng dẫn Strava — 21 ngày đọc sách K03</title>
+  <meta name="theme-color" content="#0f766e">
+  <meta name="description" content="Trang Rèn Thân trong Hành trình 21 ngày đọc sách chuyển hóa K03: thử thách Đúng–Đủ–Đều, cách ghi nhận hoạt động và hướng dẫn Strava từ số 0.">
+  <title>Rèn Thân K03 — Hành trình 21 ngày đọc sách chuyển hóa</title>
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="vi_VN">
+  <meta property="og:title" content="Rèn Trí · Rèn Thân · Rèn Nghị Lực — K03">
+  <meta property="og:description" content="Thử thách Rèn Thân Đúng–Đủ–Đều và hướng dẫn Strava cho Hành trình 21 ngày đọc sách chuyển hóa K03.">
+  <meta property="og:url" content="https://hktruc.github.io/21ndsch/">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
   <a class="skip-link" href="#noi-dung">Bỏ qua đến nội dung chính</a>
 
-  <header class="hero" id="dau-trang">
-    <div class="hero__glow" aria-hidden="true"></div>
-    <div class="container hero__content">
-      <p class="eyebrow">Hành trình 21 ngày đọc sách K03 · Rèn Thân</p>
-      <h1>Hướng dẫn Strava<br><span>Từ số 0 đến ghi xong buổi đầu tiên</span></h1>
-      <p class="hero__lead">Chỉ cần điện thoại. Không cần đồng hồ chạy bộ. <strong>Không cần mua Strava Subscription.</strong></p>
-
-      <div class="hero__choices" aria-labelledby="chon-he-dieu-hanh">
-        <p id="chon-he-dieu-hanh">Bạn đang dùng điện thoại nào?</p>
-        <div class="os-switch" role="group" aria-label="Chọn hệ điều hành">
-          <button class="os-button" type="button" data-os-choice="android" aria-pressed="false">
-            <span aria-hidden="true">●</span> Tôi dùng Android
-          </button>
-          <button class="os-button" type="button" data-os-choice="ios" aria-pressed="false">
-            <span aria-hidden="true">●</span> Tôi dùng iPhone
-          </button>
-        </div>
+  <nav class="site-nav" aria-label="Điều hướng chính">
+    <div class="container site-nav__inner">
+      <a class="site-brand" href="#dau-trang" aria-label="Rèn Thân K03 — về đầu trang"><span aria-hidden="true">21</span><strong>RÈN THÂN · K03</strong></a>
+      <div class="site-nav__links">
+        <a href="#vi-sao">Vì sao Rèn Thân</a><a href="#dung-du-deu">Đúng–Đủ–Đều</a><a href="#chung-nhan">Chứng nhận &amp; Quà</a><a href="#ghi-nhan">Cách ghi nhận</a><a href="#strava">Strava</a><a href="#faq">FAQ</a>
       </div>
-
-      <a class="button button--club" href="https://www.strava.com/clubs/21ngaydocsach_k03" target="_blank" rel="noopener noreferrer">
-        Tham gia Strava Club K03 <span aria-hidden="true">↗</span>
-      </a>
-      <p class="hero__note">Mất khoảng 10–15 phút để cài đặt và kiểm tra.</p>
-    </div>
-  </header>
-
-  <nav class="progress-nav" aria-label="Các bước hướng dẫn">
-    <div class="container progress-nav__inner">
-      <a href="#cai-app" data-step="1"><span>1</span>Cài app</a>
-      <a href="#tai-khoan" data-step="2"><span>2</span>Tài khoản</a>
-      <a href="#gps" data-step="3"><span>3</span>GPS &amp; nền</a>
-      <a href="#club" data-step="4"><span>4</span>Vào Club</a>
-      <a href="#run-walk" data-step="5"><span>5</span>Run / Walk</a>
-      <a href="#start" data-step="6"><span>6</span>Start</a>
-      <a href="#finish" data-step="7"><span>7</span>Finish</a>
-      <a href="#kiem-tra" data-step="8"><span>8</span>Kiểm tra</a>
     </div>
   </nav>
 
+  <header class="hero hero--v2" id="dau-trang">
+    <div class="hero__glow" aria-hidden="true"></div>
+    <div class="container hero__content hero__content--v2">
+      <div class="hero__copy">
+        <p class="eyebrow">Hành trình 21 ngày đọc sách chuyển hóa · K03</p>
+        <div class="status-badge"><span aria-hidden="true">●</span> Hoạt động Rèn Thân · Khuyến khích</div>
+        <h1>RÈN TRÍ <span>·</span> RÈN THÂN <span>·</span> RÈN NGHỊ LỰC</h1>
+        <p class="hero__lead hero__lead--poem">Đọc để khai mở trí.<br>Vận động để nuôi dưỡng thân.<br>Duy trì để vun bồi nghị lực.</p>
+        <blockquote class="hero-quote">“Trí sáng nhìn rõ đường.<br>Thân vững bước đi xa.”</blockquote>
+        <p class="hero__disclaimer">Đây là hoạt động khuyến khích, không phải điều kiện đánh giá chất lượng học tập và không phải cuộc thi thể thao.</p>
+        <div class="hero-actions"><a class="button button--teal" href="#vi-sao">Tìm hiểu thử thách Rèn Thân</a><a class="button button--outline" href="#strava">Hướng dẫn dùng Strava</a></div>
+      </div>
+      <div class="hero-visual" aria-hidden="true"><div class="orbit orbit--one"></div><div class="orbit orbit--two"></div><div class="hero-visual__sun"></div><div class="hero-visual__path"></div><div class="hero-visual__figure">↗</div><p><b>21</b><span>ngày cùng nhau<br>đọc · vận động · duy trì</span></p></div>
+    </div>
+  </header>
+
   <main id="noi-dung">
+    <section class="section why-section" id="vi-sao" aria-labelledby="why-title">
+      <div class="container">
+        <div class="section-heading section-heading--wide">
+          <p class="kicker">WHY · Bắt đầu từ điều gần gũi</p>
+          <h2 id="why-title">Vì sao một lớp đọc sách<br>lại khuyến khích Rèn Thân?</h2>
+          <p class="story-lead">Có một trải nghiệm rất quen thuộc: mới đọc được vài trang đã bắt đầu buồn ngủ, mắt vẫn nhìn chữ nhưng tâm trí đã đi đâu mất.</p>
+          <p>Không phải lúc nào nguyên nhân cũng nằm ở cuốn sách. Có lúc thân thể đã trì trệ, năng lượng xuống thấp nhưng đầu óc vẫn đang cố tiếp nhận thêm thông tin.</p>
+        </div>
+        <blockquote class="big-quote">“Chuyển hóa không chỉ diễn ra trong cái đầu.”</blockquote>
+        <div class="why-grid">
+          <article class="why-card"><span class="why-card__number">01</span><p class="kicker">Thân – Trí đồng bộ</p><h3>Thân có sinh khí — Trí có điều kiện sáng rõ</h3><p>Một cơ thể khỏe khoắn, có sinh khí tạo điều kiện tốt hơn cho sự tỉnh táo và khả năng tập trung. Đi bộ, chạy nhẹ, bơi, đạp xe, yoga hay khí công có thể giúp ta chuyển trạng thái từ trì trệ sang tỉnh thức.</p></article>
+          <article class="why-card"><span class="why-card__number">02</span><p class="kicker">Vun bồi nghị lực</p><h3>Rèn Thân cũng là một cách Rèn Nghị Lực</h3><p>Đọc về kỷ luật thì dễ. Thực hành kỷ luật mới là nơi bài học đi vào đời sống. Khi chưa muốn nhưng vẫn xỏ giày, bước ra ngoài hoặc bắt đầu bài tập, ta đang làm điều cần làm dù cảm xúc nhất thời chưa muốn.</p></article>
+          <article class="why-card"><span class="why-card__number">03</span><p class="kicker">Khoảng lặng cho tâm trí</p><h3>Đứng dậy, bước đi và để điều đã đọc lắng xuống</h3><p>Một quãng đi bộ, buổi chạy nhẹ, khoảng yoga hay khí công giúp ta tạm rời màn hình và dòng thông tin. Không phải lúc nào đọc thêm cũng giúp hiểu sâu hơn; đôi khi điều đã đọc cần thời gian để lắng xuống.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section challenge-section" id="thu-thach" aria-labelledby="challenge-title">
+      <div class="container challenge-layout">
+        <div><p class="kicker kicker--light">WHAT · Thử thách Rèn Thân</p><span class="status-badge status-badge--light">Hoạt động khuyến khích</span><h2 id="challenge-title">Thử thách Rèn Thân 21 ngày</h2><p class="challenge-lead">Đây không phải cuộc thi thể thao.</p><p>Không phải để xem ai khỏe hơn, chạy xa hơn, nhanh hơn hay có pace đẹp hơn.</p></div>
+        <blockquote>“Vận động đúng với mình,<br>đủ để cơ thể được chăm sóc,<br>và đều để hình thành một nhịp sống tốt hơn.”</blockquote>
+        <div class="activity-cloud" aria-label="Các hình thức vận động được ghi nhận"><span>Đi bộ</span><span>Chạy bộ</span><span>Yoga</span><span>Bơi</span><span>Đạp xe</span><span>Khí công</span><span>Vận động phù hợp khác</span></div>
+        <p class="challenge-mantra">Không ganh đua tốc độ · Không chạy theo thành tích · Không cần hơn người khác</p>
+      </div>
+    </section>
+
+    <section class="section rules-section" id="dung-du-deu" aria-labelledby="rules-title">
+      <div class="container">
+        <div class="section-heading section-heading--center"><p class="kicker">RULE · Luật chơi</p><h2 id="rules-title">ĐÚNG · ĐỦ · ĐỀU</h2><p>Ba tiêu chí đơn giản để biến vận động thành một nhịp sống có thể duy trì.</p></div>
+        <div class="rule-grid">
+          <article class="rule-card rule-card--right"><span>01</span><h3>ĐÚNG</h3><p>Là hoạt động thể chất thực sự và phù hợp với thể trạng. Đi bộ, chạy, yoga, bơi, đạp xe, khí công… đều có thể hợp lệ.</p><ul><li>Không cần cường độ cao</li><li>Không cần tốc độ cao</li><li>Ưu tiên an toàn và phù hợp</li></ul></article>
+          <article class="rule-card rule-card--enough"><span>02</span><h3>ĐỦ</h3><p>Mỗi buổi hợp lệ có tối thiểu <strong>30 phút</strong> vận động. Trong 21 ngày, mục tiêu chuẩn là ít nhất <strong>10 buổi</strong>.</p><ul><li>Không cộng dồn nhiều hoạt động quá ngắn thành một buổi 30 phút nếu BTC không quy định khác</li></ul></article>
+          <article class="rule-card rule-card--steady"><span>03</span><h3>ĐỀU</h3><p>Hoạt động được phân bổ xuyên suốt hành trình. Khuyến khích mỗi ngày hoặc khoảng 2 ngày một lần.</p><ul><li>Không dồn vào vài ngày cuối</li><li>Gợi ý: không nghỉ quá 2 ngày liên tiếp mà không có hoạt động hợp lệ</li></ul></article>
+        </div>
+        <div class="rule-equation"><span>ĐẠT CHUẨN RÈN THÂN</span><strong>=</strong><b>ĐÚNG + ĐỦ + ĐỀU</b></div>
+        <div class="examples-grid">
+          <article class="example-card example-card--pass"><p class="kicker">Đạt</p><h3>Duy trì đúng tiêu chí</h3><ul><li>Đi bộ 30–45 phút, 12 buổi trải đều trong 21 ngày.</li><li>Run 10 buổi, mỗi buổi ≥30 phút, phân bổ đều.</li><li>Yoga 30–45 phút duy trì xuyên suốt hành trình.</li><li>Xen kẽ Walk + Run + Yoga, vẫn đủ thời lượng và tính đều.</li></ul></article>
+          <article class="example-card example-card--fail"><p class="kicker">Chưa đạt</p><h3>Thành tích chưa thay thế sự duy trì</h3><ul><li>Chạy 50 km nhưng chỉ trong 3 buổi.</li><li>Mỗi ngày vận động 10 phút nhưng chưa đủ một buổi hợp lệ.</li><li>Hoàn thành 10 buổi liên tục đầu khóa rồi nghỉ phần còn lại.</li><li>Thành tích rất nhanh nhưng không duy trì đều.</li></ul></article>
+        </div>
+        <p class="recognition-line">“Chúng ta ghi nhận tính duy trì, không xếp hạng năng lực thể thao.”</p>
+      </div>
+    </section>
+
+    <section class="section recognition-section" id="chung-nhan" aria-labelledby="certificate-title">
+      <div class="container">
+        <div class="section-heading"><p class="kicker">RECOGNITION · Ghi nhận hành trình</p><h2 id="certificate-title">Giấy chứng nhận hoàn thành thử thách</h2><p>Tất cả thành viên được BTC xác nhận đạt đủ <strong>Đúng + Đủ + Đều</strong> đều được ghi nhận hoàn thành và nhận Giấy chứng nhận.</p></div>
+        <div class="certificate-layout">
+          <div class="certificate" aria-label="Mẫu minh họa giấy chứng nhận hoàn thành thử thách"><div class="certificate__frame"><p>Hành trình 21 ngày đọc sách chuyển hóa · K03</p><span>GIẤY CHỨNG NHẬN</span><h3>HOÀN THÀNH THỬ THÁCH RÈN THÂN</h3><strong>ĐÚNG · ĐỦ · ĐỀU</strong><div class="certificate__name">HỌ VÀ TÊN THÀNH VIÊN</div><small>Ghi nhận sự kiên trì và cam kết với chính mình</small></div></div>
+          <div class="certificate-copy"><blockquote>“Mỗi người hoàn thành cam kết với chính mình đều xứng đáng được ghi nhận.”</blockquote><p>Đây là <strong>Giấy chứng nhận hoàn thành thử thách</strong>, không phải văn bằng, chứng chỉ nghề nghiệp hay chứng nhận chuyên môn chính thức.</p></div>
+        </div>
+        <div class="reward-block" id="phan-qua">
+          <div class="reward-copy"><p class="kicker kicker--light">03 phần quà cuối hành trình</p><h3>03 phần quà dành cho những người đã hoàn thành</h3><p>Bốc thăm ngẫu nhiên trong toàn bộ nhóm được BTC xác nhận đạt chuẩn.</p></div>
+          <div class="reward-flow"><div><span>1</span><p><b>Đạt Đúng–Đủ–Đều</b><br>BTC xác nhận nhóm hoàn thành</p></div><i aria-hidden="true">↓</i><div><span>2</span><p><b>Nhận Giấy chứng nhận</b><br>Tất cả người đạt đều được nhận</p></div><i aria-hidden="true">↓</i><div><span>3</span><p><b>Cơ hội nhận 1 trong 03 phần quà</b><br>BTC bốc thăm ngẫu nhiên</p></div></div>
+          <p class="reward-note">Không phải Top 3 chạy nhanh, nhiều km, pace đẹp hay thành tích cao. <strong>Bạn không cần thắng người khác. Bạn chỉ cần hoàn thành cam kết với chính mình.</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section measurement-section" id="ai-tong-hop" aria-labelledby="ai-title">
+      <div class="container split-layout">
+        <div><p class="kicker">MEASUREMENT · Minh bạch dữ liệu</p><h2 id="ai-title">AI hỗ trợ BTC tổng hợp<br>chứ không “chấm người thắng”</h2><p>AI chỉ hỗ trợ xử lý dữ liệu. Kết quả cuối cùng luôn do BTC rà soát và xác nhận.</p></div>
+        <div class="ai-checklist"><p><span>✓</span>Tổng hợp số buổi và thời lượng</p><p><span>✓</span>Kiểm tra phân bố hoạt động, phát hiện khoảng nghỉ</p><p><span>✓</span>Đối chiếu tiêu chí Đúng – Đủ – Đều</p><p><span>✓</span>Tạo danh sách cần BTC rà soát</p></div>
+        <aside class="human-note"><strong>BTC là bên quyết định cuối cùng:</strong> rà soát, xử lý trường hợp đặc biệt và xác nhận kết quả. Nếu dữ liệu sai lệch hoặc thiếu, thành viên có thể phản hồi để BTC kiểm tra.</aside>
+      </div>
+    </section>
+
+    <section class="section tracking-section" id="ghi-nhan" aria-labelledby="tracking-title">
+      <div class="container">
+        <div class="section-heading"><p class="kicker">ACTIVITY · Cách ghi nhận</p><h2 id="tracking-title">Mỗi hình thức vận động<br>có một cách ghi nhận phù hợp</h2><p>Trong chương trình này, Strava được sử dụng chủ yếu để đơn giản hóa việc ghi nhận Walk và Run.</p></div>
+        <div class="tracking-grid"><article><span>W</span><h3>Đi bộ</h3><p>Ghi nhận bằng Strava</p></article><article><span>R</span><h3>Chạy bộ</h3><p>Ghi nhận bằng Strava</p></article><article><span>Y</span><h3>Yoga</h3><p>Check-in theo hướng dẫn BTC</p></article><article><span>B</span><h3>Bơi</h3><p>Check-in theo hướng dẫn BTC</p></article><article><span>Đ</span><h3>Đạp xe</h3><p>Check-in hoặc phương thức BTC quy định</p></article><article><span>K</span><h3>Khí công</h3><p>Check-in theo hướng dẫn BTC</p></article><article><span>+</span><h3>Môn khác</h3><p>BTC hướng dẫn cách xác nhận</p></article></div>
+        <p class="tracking-note">Các hình thức vận động khác sẽ được BTC hướng dẫn cách check-in. Website không tạo link biểu mẫu khi chưa có thông tin chính thức.</p>
+      </div>
+    </section>
+
+    <section class="section community-section" id="cong-dong" aria-labelledby="community-title">
+      <div class="container community-layout">
+        <div><p class="kicker kicker--light">COMMUNITY · Cùng nhau chuyển động</p><h2 id="community-title">Một người bắt đầu.<br>Cả cộng đồng cùng duy trì.</h2><p>Một người vận động 30 phút là một hành động cá nhân. Nhiều thành viên cùng duy trì tạo thành một môi trường truyền cảm hứng.</p><p>Strava Club không tồn tại để xếp người này trên người kia. Nó giúp chúng ta nhìn thấy: <strong>“Hôm nay, những người đồng hành của mình vẫn đang bước tiếp.”</strong></p></div>
+        <div class="community-cta"><p>KHÔNG SO SÁNH.<br>CHỈ NHẮC NHAU TIẾP TỤC.</p><a class="button button--club" href="https://www.strava.com/clubs/21ngaydocsach_k03" target="_blank" rel="noopener noreferrer">Tham gia Strava Club K03 <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </section>
+
+    <section class="strava-module" id="strava" aria-labelledby="strava-module-title">
+      <div class="strava-module__header"><div class="container"><p class="kicker">TOOL · Từ đây mới là phần kỹ thuật</p><h2 id="strava-module-title">Hướng dẫn Strava<br><span>Từ số 0 đến ghi xong buổi đầu tiên</span></h2><p>Strava chỉ là công cụ giúp ghi nhận hoạt động và kết nối cộng đồng. Không cần đồng hồ chạy bộ, chỉ cần điện thoại. <strong>Không cần mua Strava Subscription.</strong></p>
+        <div class="strava-os-chooser hero__choices" aria-labelledby="chon-he-dieu-hanh"><p id="chon-he-dieu-hanh">Bạn đang dùng điện thoại nào?</p><div class="os-switch" role="group" aria-label="Chọn hệ điều hành"><button class="os-button" type="button" data-os-choice="android" aria-pressed="false"><span aria-hidden="true">●</span> Tôi dùng Android</button><button class="os-button" type="button" data-os-choice="ios" aria-pressed="false"><span aria-hidden="true">●</span> Tôi dùng iPhone</button></div></div>
+      </div></div>
+      <nav class="progress-nav" aria-label="8 bước hướng dẫn Strava"><div class="container progress-nav__inner"><a href="#cai-app" data-step="1"><span>1</span>Cài app</a><a href="#tai-khoan" data-step="2"><span>2</span>Tài khoản</a><a href="#gps" data-step="3"><span>3</span>GPS &amp; nền</a><a href="#club" data-step="4"><span>4</span>Vào Club</a><a href="#run-walk" data-step="5"><span>5</span>Run / Walk</a><a href="#start" data-step="6"><span>6</span>Start</a><a href="#finish" data-step="7"><span>7</span>Finish</a><a href="#kiem-tra" data-step="8"><span>8</span>Kiểm tra</a></div></nav>
     <section class="section intro-section" aria-labelledby="strava-la-gi">
       <div class="container narrow">
         <div class="section-heading section-heading--center">
@@ -217,24 +294,6 @@
       </div>
     </section>
 
-    <section class="section section--dark" aria-labelledby="test-title">
-      <div class="container test-layout">
-        <div>
-          <p class="kicker">Checkpoint trước ngày 1</p>
-          <h2 id="test-title">Đi bộ thử 5–10 phút</h2>
-          <p>Thử trước giúp bạn phát hiện sớm vấn đề GPS hoặc tiết kiệm pin.</p>
-        </div>
-        <ol class="test-list">
-          <li>Mở Strava và chọn <strong>Walk</strong>.</li>
-          <li>Bấm <strong>Start</strong>.</li>
-          <li>Đi bộ 5–10 phút, khóa màn hình trong phần lớn thời gian.</li>
-          <li>Mở lại điện thoại → <strong>Finish</strong> → <strong>Save</strong>.</li>
-          <li>Kiểm tra quãng đường và đường GPS.</li>
-        </ol>
-        <p class="success-stamp"><span aria-hidden="true">✓</span> Có km và đường GPS hợp lý? Điện thoại đã sẵn sàng.</p>
-      </div>
-    </section>
-
     <section class="section step-section" id="club" data-progress-section="4" aria-labelledby="club-title">
       <div class="container">
         <div class="step-header">
@@ -387,27 +446,6 @@
       </div>
     </section>
 
-    <section class="section section--soft" id="faq" aria-labelledby="faq-title">
-      <div class="container narrow">
-        <div class="section-heading section-heading--center">
-          <p class="kicker">Khi bạn cần trợ giúp</p>
-          <h2 id="faq-title">Câu hỏi thường gặp</h2>
-        </div>
-        <div class="faq-list">
-          <details><summary>Có phải mua Strava không?</summary><p>Không. Bản miễn phí đủ để ghi Run / Walk và tham gia Club K03. Không nhập phương thức thanh toán chỉ để hoàn thành chương trình.</p></details>
-          <details><summary>Tôi không có đồng hồ chạy bộ?</summary><p>Không sao. Bạn chỉ cần điện thoại có GPS, cấp quyền vị trí đúng và cho phép Strava hoạt động nền.</p></details>
-          <details><summary>Tôi đi bộ được không?</summary><p>Được. Hãy chọn Walk / Đi bộ trước khi bấm Start.</p></details>
-          <details><summary>Tôi chạy rất chậm thì chọn Run hay Walk?</summary><p>Nếu mục tiêu chính là chạy hoặc jogging, bạn có thể chọn Run. Nếu chủ yếu đi bộ, hãy chọn Walk.</p></details>
-          <details><summary>Tắt màn hình có sao không?</summary><p>Khóa màn hình là bình thường. Quan trọng là Strava có quyền vị trí, được chạy nền và không bị tiết kiệm pin chặn. Không vuốt đóng hẳn ứng dụng khi đang ghi.</p></details>
-          <details><summary>Tại sao tôi chạy 5 km nhưng Strava chỉ ghi 2 km?</summary><p>Thường do quyền vị trí, GPS yếu, tiết kiệm pin hoặc ứng dụng bị đóng nền. Kiểm tra lại Bước 3 rồi làm bài test đi bộ 5–10 phút.</p></details>
-          <details><summary>Tôi không có mạng 4G lúc chạy?</summary><p>Strava thường có thể ghi GPS khi không có dữ liệu di động; hãy mở ứng dụng và bắt đầu trước khi đi. Kết nối mạng lại để lưu/đồng bộ nếu cần.</p></details>
-          <details><summary>Tôi lỡ chọn nhầm Run / Walk?</summary><p>Hoạt động vẫn có thể được ghi. Sau khi lưu, Strava có thể cho phép sửa loại hoạt động; nếu không chắc, hãy báo BTC thay vì xóa vội.</p></details>
-          <details><summary>Tôi lỡ mua Subscription?</summary><p>Kiểm tra và quản lý gói trong Google Play trên Android hoặc Subscriptions của Apple ID trên iPhone. Việc gỡ ứng dụng không nhất thiết tự hủy gói.</p></details>
-          <details><summary>Tôi không thấy mình trong Club?</summary><p>Kiểm tra đã bấm Join / Tham gia chưa, tài khoản đang đăng nhập có đúng không và activity đã Save chưa. Cách Strava hiển thị feed/leaderboard có thể thay đổi.</p></details>
-        </div>
-      </div>
-    </section>
-
     <section class="section quick-guide" aria-labelledby="quick-title">
       <div class="container">
         <p class="kicker">Ghi nhớ từ ngày 1</p>
@@ -423,11 +461,48 @@
         <a class="button button--light" href="#dau-trang">Xem lại từ đầu <span aria-hidden="true">↑</span></a>
       </div>
     </section>
+      </section>
+
+    <section class="section section--dark checkpoint-section" id="test-truoc-ngay-1" aria-labelledby="test-title">
+      <div class="container test-layout">
+        <div><p class="kicker">CHECKPOINT · Trước ngày 1</p><h2 id="test-title">Đi bộ thử 5–10 phút</h2><p>Thử trước giúp bạn phát hiện sớm vấn đề GPS hoặc tiết kiệm pin.</p></div>
+        <ol class="test-list"><li>Mở Strava và chọn <strong>Walk</strong>.</li><li>Bấm <strong>Start</strong>.</li><li>Đi bộ 5–10 phút, khóa màn hình trong phần lớn thời gian.</li><li>Mở lại điện thoại → <strong>Finish</strong> → <strong>Save</strong>.</li><li>Kiểm tra quãng đường và đường GPS.</li></ol>
+        <p class="success-stamp"><span aria-hidden="true">✓</span> Có km và đường GPS hợp lý? Điện thoại đã sẵn sàng.</p>
+      </div>
+    </section>
+
+    <section class="section safety-section" aria-labelledby="safety-title">
+      <div class="container"><aside class="safety-box"><div aria-hidden="true">♥</div><div><p class="kicker">An toàn &amp; tôn trọng thể trạng</p><h2 id="safety-title">Lắng nghe cơ thể</h2><p>Hãy chọn hình thức và cường độ phù hợp với thể trạng của mình. Không cần cố chạy khi cơ thể chưa phù hợp; đi bộ 30 phút hoàn toàn có giá trị. Nếu xuất hiện dấu hiệu bất thường trong lúc vận động, hãy dừng lại và ưu tiên an toàn.</p></div></aside></div>
+    </section>
+
+    <section class="section section--soft" id="faq" aria-labelledby="faq-title">
+      <div class="container narrow">
+        <div class="section-heading section-heading--center"><p class="kicker">FAQ · Câu hỏi thường gặp</p><h2 id="faq-title">Bạn có thể bắt đầu theo cách phù hợp với mình</h2></div>
+        <div class="faq-list">
+          <details><summary>Rèn Thân có bắt buộc không?</summary><p>Không. Đây là hoạt động khuyến khích, không phải điều kiện đánh giá chất lượng học tập. Bạn có thể tham gia theo khả năng và hoàn cảnh của mình.</p></details>
+          <details><summary>Tôi chỉ đi bộ có được không?</summary><p>Được. Đi bộ 30 phút là một hoạt động có giá trị và có thể đạt chuẩn khi đủ số buổi, phân bổ đều trong hành trình.</p></details>
+          <details><summary>Yoga, bơi hoặc khí công có được tính không?</summary><p>Có thể được tính. Các hoạt động này check-in theo hướng dẫn của BTC và vẫn cần đáp ứng tiêu chí Đúng – Đủ – Đều.</p></details>
+          <details><summary>Tôi bị đau hoặc thể trạng không phù hợp thì sao?</summary><p>Hãy ưu tiên an toàn, chọn hình thức nhẹ nhàng phù hợp hoặc tạm dừng khi cần. Thử thách không yêu cầu bạn cố chạy hay vượt quá khả năng.</p></details>
+          <details><summary>Một buổi phải tối thiểu bao lâu?</summary><p>Một buổi hợp lệ cần tối thiểu 30 phút vận động, trừ khi BTC có thông báo điều chỉnh chính thức.</p></details>
+          <details><summary>Chạy 10 km có lợi thế hơn đi bộ 30 phút không?</summary><p>Không. Chương trình ghi nhận việc hoàn thành cam kết Đúng – Đủ – Đều, không xếp hạng năng lực thể thao.</p></details>
+          <details><summary>Chạy nhanh có được cộng thêm điểm không?</summary><p>Không. Tốc độ, pace và số kilomet không tạo thêm ưu thế trong cơ chế ghi nhận hay bốc thăm quà.</p></details>
+          <details><summary>Nếu tôi đủ số buổi nhưng dồn vào vài ngày thì sao?</summary><p>Bạn có thể chưa đáp ứng tiêu chí Đều. Hoạt động cần được phân bổ xuyên suốt, không dồn toàn bộ vào đầu hoặc cuối hành trình.</p></details>
+          <details><summary>Giấy chứng nhận được cấp cho ai?</summary><p>Tất cả thành viên được BTC xác nhận đạt đủ Đúng + Đủ + Đều đều nhận Giấy chứng nhận hoàn thành thử thách.</p></details>
+          <details><summary>03 phần quà được chọn như thế nào?</summary><p>BTC bốc thăm ngẫu nhiên 03 phần quà trong toàn bộ nhóm đã được xác nhận đạt chuẩn. Đây không phải giải cho Top 3 thành tích.</p></details>
+          <details><summary>AI có phải là người quyết định kết quả không?</summary><p>Không. AI chỉ hỗ trợ tổng hợp và đối chiếu dữ liệu. BTC rà soát các trường hợp đặc biệt và xác nhận kết quả cuối cùng.</p></details>
+          <details><summary>Tôi không dùng Strava thì có tham gia được không?</summary><p>Có thể. Strava chủ yếu đơn giản hóa việc ghi nhận Walk và Run. Hãy làm theo phương thức check-in BTC hướng dẫn cho hoạt động của bạn.</p></details>
+          <details><summary>Tôi tập môn khác thì check-in thế nào?</summary><p>BTC sẽ hướng dẫn cách xác nhận phù hợp. Website không tự đặt ra biểu mẫu hay đường link khi chưa có thông báo chính thức.</p></details>
+          <details><summary>Strava có cần trả phí không?</summary><p>Không. Bản miễn phí đủ để ghi Run / Walk và tham gia Club K03. Không cần nhập thẻ chỉ để tham gia chương trình.</p></details>
+          <details><summary>Khóa màn hình khi Strava đang ghi có được không?</summary><p>Được. Khóa màn hình khác với vuốt đóng / force-close ứng dụng. Bạn không cần giữ màn hình sáng.</p></details>
+          <details><summary>Không thấy hoạt động trong Club thì sao?</summary><p>Kiểm tra đã Save, đã Join đúng Club và quyền hiển thị hoạt động. Nếu vẫn chưa thấy, gửi ảnh màn hình kết quả cho BTC để được hỗ trợ.</p></details>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="footer">
     <div class="container footer__inner">
-      <div><strong>Hành trình 21 ngày đọc sách K03</strong><br><span>Hướng dẫn sử dụng Strava cho hoạt động Rèn Thân</span></div>
+      <div><strong>Hành trình 21 ngày đọc sách chuyển hóa · K03</strong><br><span>Rèn Trí · Rèn Thân · Rèn Nghị Lực</span></div>
       <p>Website không thu thập dữ liệu học viên và không sử dụng Strava API.</p>
     </div>
   </footer>

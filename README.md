@@ -1,6 +1,6 @@
-# Hướng dẫn Strava — 21 ngày đọc sách K03
+# Rèn Thân — Hành trình 21 ngày đọc sách chuyển hóa K03
 
-Website tĩnh hướng dẫn học viên mới dùng Strava đi từ cài ứng dụng, tạo tài khoản miễn phí, cấp quyền GPS/chạy nền, tham gia Club K03 đến ghi và lưu một buổi Run hoặc Walk.
+Landing page chương trình Rèn Thân K03, trình bày tinh thần Đúng–Đủ–Đều, cơ chế ghi nhận, Giấy chứng nhận, 03 phần quà và module hướng dẫn Strava cho người mới.
 
 ## Mở trên máy
 
@@ -30,7 +30,7 @@ Nếu thay một minh họa bằng screenshot thật:
 
 1. Dùng ảnh chụp thật từ Strava/điện thoại; không dựng hoặc tạo màn hình Strava giả.
 2. Crop phần không cần thiết và che/làm mờ dữ liệu cá nhân: tên, avatar, email, số điện thoại, thông báo riêng, dữ liệu sức khỏe, vị trí nhà hoặc bản đồ nhạy cảm.
-3. Xuất WebP và giữ đúng filename trong danh sách cuối trang hoặc trong `js/app.js`.
+3. Xuất WebP và giữ đúng filename đang khai báo trong screenshot-slot của index.html.
 4. Copy vào `assets/screenshots/android/` hoặc `assets/screenshots/ios/` để thay file tương ứng.
 5. Tải lại trang và kiểm tra ảnh phóng to.
 
@@ -49,7 +49,7 @@ Trong DevTools của trình duyệt, kiểm tra tối thiểu:
 ```bash
 git status
 git add index.html css js assets README.md AGENTS.md .nojekyll .gitignore
-git commit -m "feat: add mobile-first Strava guide"
+git commit -m "feat: redesign K03 site around Ren Than challenge"
 git push origin main
 ```
 
